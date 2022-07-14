@@ -16,6 +16,12 @@ function escribir(ruta, contenido, cb) {
     });
 }
 
-leer(__dirname + '/archivo.txt', console.log);
+function borrar(ruta, cb) {
+    fs.unlink(ruta, cb);
+}
 
-escribir(__dirname + '/archivo_escrito.txt', 'Soy un archivo nuevo creado desde código.', console.log);
+// leer(__dirname + '/archivo.txt', console.log);
+
+// escribir(__dirname + '/archivo_escrito.txt', 'Soy un archivo nuevo creado desde código.', console.log);
+
+borrar(__dirname + '/archivo_escrito.txt', console.log);
