@@ -2,7 +2,7 @@ function hola(nombre, miCallback) {
     setTimeout(function () {
         console.log('Hola ' + nombre);
         miCallback();
-    }, 1000);
+    }, 1500);
 }
 
 function adios(nombre, otroCallback) {
@@ -13,8 +13,11 @@ function adios(nombre, otroCallback) {
 }
 
 console.log('Iniciando proceso ...');
-hola('Carlos',function () {
-    adios('Carlos', function () {
-        console.log('Terminando proceso ...');
-    });
-});
+// hola('Carlos',function () {
+//     adios('Carlos', function () {
+//         console.log('Terminando proceso ...');
+//     });
+// });
+
+hola('Carlos', function () {});
+adios('Carlos', function () {});
