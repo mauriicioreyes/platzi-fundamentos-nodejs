@@ -1,3 +1,5 @@
-setImmediate(function () {
-    console.log('Hola');
-})
+// console.log(process);
+
+console.log(__dirname);
+
+console.log(__filename);
