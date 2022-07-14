@@ -24,8 +24,14 @@ function hablar(callbackHablar) {
 console.log('Iniciando proceso ...');
 hola('Carlos', function (nombre) {
     hablar(function () {
-        adios(nombre, function () {
-            console.log('Terminando proceso ...');
+        hablar(function () {
+            hablar(function () {
+                hablar(function () {
+                    adios(nombre, function () {
+                        console.log('Terminando proceso ...');
+                    });
+                });
+            });
         })
     });
 });
