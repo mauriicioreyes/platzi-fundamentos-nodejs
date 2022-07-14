@@ -1,5 +1,3 @@
-// console.log(process);
+globalThis.miVariable = 'unValorPropio';
 
-console.log(__dirname);
-
-console.log(__filename);
+console.log(miVariable);
