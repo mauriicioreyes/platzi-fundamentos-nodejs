@@ -1,3 +1,3 @@
-let saludo = 'Hola!';
+let nombre = process.env.NOMBRE;
 
-console.log(saludo);
+console.log('Hola ' + nombre);
