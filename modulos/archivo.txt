@@ -1,0 +1,7 @@
+Hola, yo soy un archivo con texto
+
+Tengo muchas líneas
+
+y soy muy guapo
+
+Saludos, besos bye.
