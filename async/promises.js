@@ -20,7 +20,8 @@ function hablar(nombre) {
     return new Promise((resolve, reject) => {
         setTimeout(function () {
             console.log('Bla bla bla bla...');
-            resolve(nombre);
+            // resolve(nombre);
+            reject('Falló al intentar no fallar :(');
         }, 1000);
     });
 }
@@ -36,4 +37,8 @@ hola('Daniel')
     .then(adios)
     .then((nombre) => {
         console.log('Terminado el proceso');
+    })
+    .catch(error => {
+        console.error('Hay un error X|');
+        console.error(error);
     })
