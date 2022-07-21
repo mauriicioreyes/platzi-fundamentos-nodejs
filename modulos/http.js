@@ -12,7 +12,8 @@ function router(request, response) {
             response.end();
             break;
         default:
-            response.write('Error 404: Elemento no encontrado :(');
+            response.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8'});
+            response.write('<h2>Error 404: Elemento no encontrado :(</h2>');
             response.end();
     }
     // Respuesta al usuario
