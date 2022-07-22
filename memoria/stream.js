@@ -7,5 +7,9 @@ let readableStream = fs.createReadStream(__dirname + '/input.txt');
 readableStream.setEncoding('utf8');
 
 readableStream.on('data', function (chunk) {
-    console.log(chunk);
+    data += chunk;
+});
+
+readableStream.on('end', function () {
+    console.log(data);
 })
