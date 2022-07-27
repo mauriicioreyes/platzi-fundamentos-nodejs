@@ -13,3 +13,7 @@ gulp.task('serve', function(cb) {
             open: true
         }));
 });
+
+gulp.task('start', gulp.series("build", "serve"), function(done) {
+    done();
+});
